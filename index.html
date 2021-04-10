@@ -1,0 +1,1315 @@
+
+<!doctype html>
+   <html>
+     <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		* {
+			box-sizing: border-box;
+			    margin-top: 0;
+			padding:0;
+			margin-left:0;
+			margin-right:0;
+		}
+		
+		h1 {
+    		font-size: 40px;
+   		 text-align: center;
+  		  background-color:  #0000ff85;
+  		  color: white;
+		padding:15px;
+		}
+		
+		
+		
+		
+		
+		.col-1 {width: 8.33%;}
+		.col-2 { width: 16.66%; }
+		.col-3 { width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%; }
+		.col-9 {width: 75%;}
+		.col-10 { width: 83.33%; }
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+		
+		[class*="col-"] {
+		  width: 100%;	
+		  float:left;		
+		}	
+		@media only screen and (min-width:600px) {
+
+			
+		  .col-s-1 {width: 8.33%;}
+  		  .col-s-2 {width: 16.66%;}
+  		  .col-s-3 {width: 25%;}
+  		  .col-s-4 {width: 33.33%;}
+  		  .col-s-5 {width: 41.66%;}
+  		  .col-s-6 {width: 50%;}
+  		  .col-s-7 {width: 58.33%;}
+  		  .col-s-8 {width: 66.66%;}
+  		  .col-s-9 {width: 75%;}
+  		  .col-s-10 {width: 83.33%;}
+  		  .col-s-11 {width: 91.66%;}
+  		  .col-s-12 {width: 100%;}
+		}
+		@media only screen and (min-width:768px) {
+			
+			.rows p{
+		position:absolute;
+		top:70%;
+		font-size:25px;
+		font-family: 'Roboto', sans-serif;
+		color:white;
+		left:20%;
+		right:20%;
+		}
+		ul{
+		font-size:25px;
+		font-family: 'Roboto', sans-serif;
+		position:absolute;
+		margin-left:60px;
+	
+		
+		}
+		
+
+		
+		input[type="password"] {
+ 	   outline: none;
+  	   border-radius: 30px;
+	   padding:7px;
+	   width:20%;
+	   font-size:16px;
+	   border:none; 
+
+	}
+	input[type="email"] {
+ 	   outline: none;
+  	   border-radius: 30px;
+	   padding:7px;
+	   width:20%;
+	   font-size:16px;
+	   border:none;
+	}
+	input[type="time"] {
+ 	   outline: none;
+  	   border-radius: 30px;
+	   padding:7px;
+	   width:20%;
+	   font-size:16px;
+	   border:none;
+	}
+	 .form{
+	padding:10px;
+	}
+	input[type="Number"] {
+ 	   outline: none;
+  	   border-radius: 30px;
+	   padding:7px;
+	   width:20%;
+	   font-size:16px;
+	   border:none;
+	}
+	
+	
+	button:hover{
+	opacity:0.6;
+	}
+	.formcont{
+	margin:60px;
+	background-coor:black;
+	}
+	body,html{
+	background-image: url(../form.jpg);
+	background-size:cover;
+	background-position:center;
+	}
+	.formcont input{
+	background-color:none;
+	}
+		i.fa.fa-arrow-left {
+   		 float: left;
+		color: white;
+		}
+		
+		sarow,a{
+		text-decoration:none;
+		background-color:white;
+		color:black;
+		padding:2px;
+		border-radius:20px;
+		padding-left: 20px;
+    		padding-right: 20px;
+		}
+		
+		li,button{
+			border: none;
+   		 font-size: 22px;
+   		 border-radius: 15px;
+		   outline: none;
+		margin-top:10px;
+		font-size:25px;
+		color:black;
+	
+		
+		
+		}
+
+		.footer{
+		background-color:black;
+		color:white;
+		}
+		.footer p{
+		text-align:center;
+		padding:2px;
+		}
+		
+		
+		  .col-l-1 {width: 8.33%;}
+  		  .col-l-2 {width: 16.66%;}
+  		  .col-l-3 {width: 25%;}
+  		  .col-l-4 {width: 33.33%;}
+  		  .col-l-5 {width: 41.66%;}
+  		  .col-l-6 {width: 50%;}
+  		  .col-l-7 {width: 58.33%;}
+  		  .col-l-8 {width: 66.66%;}
+  		  .col-l-9 {width: 75%;}
+  		  .col-l-10 {width: 83.33%;}
+  		  .col-l-11 {width: 91.66%;}
+  		  .col-l-12 {width: 100%;}
+		.first{
+		display:flex;
+		justify-content:space-around;
+		
+		}
+		.photo{
+		margin-left:40px;
+		margin-right:40px;
+		}
+
+		.formcont{
+		font-size:25px;
+		font-family: 'Roboto', sans-serif;
+		color:white;
+		}
+		
+		}
+
+		
+
+		
+
+		.row::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+		}
+			
+		
+		image {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		img {
+			max-width: 100%;
+			height: auto;
+			
+			
+		}
+		.first img{
+		margin-top:10%;
+		}
+		
+		
+		sarow,a{
+		text-decoration:none;
+		background-color:white;
+		color:black;
+		padding:2px;
+		border-radius:20px;
+		padding-left: 20px;
+    		padding-right: 20px;
+		}
+		.rows{
+		margin-left:10px;
+		font-size:20px;
+		font-family:'Roboto', sans-serif;
+		}
+		
+		
+		ul{
+		font-size:25px;
+		font-family: 'Roboto', sans-serif;
+		margin-left:60px;
+		}
+		.dinesh {
+  		  margin-left: 30px;
+		    font-size: 20px;
+		font-family: 'Roboto', sans-serif;
+		
+		}
+		.buton{
+		text-align:center;
+		}
+		.buton a:hover{
+		background-color:black;
+		color:white;
+		}
+		.footer{
+		background-color:black;
+		color:white;
+		margin-top:40px;
+	
+		}
+		.footer p{
+			font-size:30px;
+			margin-bottom:0;
+			padding:8px;
+			}
+
+				
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+	button{
+	width:100px;
+	}
+
+  
+	
+
+form{
+		  width: 80%;
+		  margin: auto;
+		  border: 1px solid lightgreen;
+		background-color: #90ee9042;
+		}
+
+		
+		.header {
+		  text-align: center;
+		  position: relative;
+		color: green;
+		}
+
+		form1{
+		  width: 80%;
+		  margin: auto;
+		  border: 1px solid #ff000042;
+		background-color: #ff000042;
+		}
+
+		.container1 {
+		  padding: 10px;
+		color: red;
+		}
+
+		.header1 {
+		  text-align: center;
+		  position: relative;
+		}
+		.close {
+		  position: absolute;
+		  top: 0px;
+		  right: 10px;
+		color: #fff;	
+		  font-size: 24px;		
+		  font-weight: bold;
+		  cursor: pointer;
+
+		}
+
+		.cancel {
+		  width: auto;
+		}
+
+		
+		
+
+		.modal{
+		  position: fixed;
+		  width: 100%;
+		  height: 100%;
+		  background: rgba(0,0,0,0.4);
+		  overflow: auto;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+	    	  padding-top: 60px;
+		  display: none;
+
+		}
+		.loyal{
+		  position: fixed;
+		  width: 100%;
+		  height: 100%;
+		  background: rgba(0,0,0,0.4);
+		  overflow: auto;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+	    	  padding-top: 60px;
+		  display: none;
+
+		}			
+		.go {
+		  width: auto;
+		}
+		.animate {
+		  animation: zoomeffect 0.5s;
+		transition:10s;
+		}
+
+		@keyframes zoomeffect {
+
+			from {
+			   transform: scale(0);
+
+
+			}
+			to {
+			   transform: scale(1);
+
+			}
+
+		}
+		.ani {
+		  animation: zoomeffect 0.8s;
+		transition:10s;
+		}
+
+		@keyframes zoomeffect {
+
+			from {
+			   transform: scale(0);
+
+
+			}
+			to {
+			   transform: scale(1);
+
+			}
+
+		}
+
+
+
+
+		input[type="email"] {
+  			  padding: 10px;
+   			 font-size: 16px;
+   			 border-radius: 20px;
+   			 outline: none;
+			margin-top:10px;
+			}
+		input[type="loct"]{
+			  padding: 10px;
+   			 font-size: 16px;
+   			 border-radius: 20px;
+   			 outline: none;
+			margin-top:10px;
+			}
+		input[type="time"] {
+			 padding: 8px;
+   			 font-size: 16px;
+   			 border-radius: 20px;
+   			 outline: none;
+			padding-left:90px;
+			margin-top:10px;
+			}
+		
+		input[type="Number"] {
+			 padding: 10px;
+   			 font-size: 16px;
+   			 border-radius: 20px;
+   			 outline: none;
+			margin-top:10px;
+
+		}
+		li button {
+   			 font-size: 20px;
+  			  border-radius: 20px;
+  			  padding-left: 10px;
+  			  padding-right: 10px;
+  		  background-color: none;
+  			  outline: none;
+			}
+		buton:hover{
+	opacity:0.6;
+	}
+	buton{
+	width:100px;
+	outline:none;
+	color:black;
+
+	}
+	button {
+    font-size: 20px;
+    border-radius: 20px;
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: black;
+    padding-top: 2px;
+    padding-buttom: 2px;
+}
+	.mor p{
+		color:white;
+		    background-color: #90ee9024;
+		font-size:25px;
+		
+	}
+		.mor{
+		background-color:#13dc13d1;
+		}
+		
+		
+		.form {
+    background-color: #cccccc87;
+}
+
+	.formcont {
+    background-color: #00fa9a4a;
+}
+	</style>
+
+     </head>
+
+     <body>
+
+	<div class= "row">
+		<div class="col-12">
+		<h1>Food Provider</h1>
+		</div>
+	</div>
+	<div class="srow">
+		<div class=" col-s-12 col-l-12">
+			<ul>
+			<li><a href="#">Home</a></home>
+			<li><div class="mistake">
+		<button class="go" id="put">About</button>
+		</div>
+		<div class="loyal" id="loyal">
+
+	<form class="animate">
+
+		<div class="container footer">
+			<span class="close" id="close">&times;</span>
+			<div class="mor">
+		<h1>About us</h1>
+		<p> This website is made by Dinesh Neupane. This website is for order online any kinds of food  which you like in proper discount . Thanks you for visit this website. </p>
+</div>
+		</div>
+
+		</div>
+		</div>
+		<script>
+
+		document.getElementById("put").addEventListener("click", function(){
+			
+			document.getElementById("loyal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("loyal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("loyal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("loyal").style.display = "none";
+				
+			}
+
+		});
+		</script></li>
+			
+			
+			</ul>
+			
+		</div>
+
+		
+	<div class="one">	
+	<image src="image/1.jpg"width="100%">
+	</div>
+	<div class="rows">
+	<div class="col-l-12 col-s-12">
+	<p>All you need is love. If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.This above all to thine own self be true  One cannot think well love well sleep well if one has not dined well. I love you like a fat kid loves cake</p>
+     	</div>
+	</div>
+	
+		<div class="first">
+				
+			<div class="photo">
+				<image src="image/4.jpg">
+				<div class="dinesh">
+				<p>Life Size Bronze Sculpture Church <br>Decorative Statue Religious                      		God<br>
+                 			   FOB Price:<b> NRP RS 305</b> / Plate<br>
+                			    Min. Order: <b>1 </b>Piece</p>
+				</div>
+				<div class="buton">
+	 
+	 			  <button class="go" id="out">Order</button>
+              			 </div>
+			</div>
+
+			<div class="modal" id="modal">
+
+	<form class="animate">
+
+		<div class="container header">
+			<span class="close" id="close">&times;</span>
+			<div class="formcont">
+
+<h3><i class="fa fa-user"></i>Home Service</h3>
+
+	<form>
+ <div class="form">
+ 
+	<input type="email"placeholder="yourname@gmail.com" name="email">
+  </div>	
+ 
+<div class="form">
+ 
+	<input type="email"placeholder="retype email"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location" name="psw">
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="time"placeholder="Enter Time"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="Number"placeholder="enter number "required>
+  </div>	
+<button>Order </button>
+
+	</form>
+</div>
+		</div>
+
+		
+
+	</form>
+
+
+  </div>
+	
+				<script>
+
+		document.getElementById("out").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("modal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("modal").style.display = "none";
+				
+			}
+
+		});
+
+	</script>	
+			<div class="photo">
+			
+				<image src="image/2.jpg">
+				<div class="dinesh">
+				<p>Life Size Bronze Sculpture Church <br>Decorative Statue Religious                      		God<br>
+                 			   FOB Price:<b>NRP RS 300</b> / Plate<br>
+                 			   Min. Order: <b>1 </b>Plate</p>
+			</div>
+				<div class="buton">
+	 
+				   <button class="go" id="my">Order</button>
+              			 </div>
+			</div>
+				
+	
+				<div class="modal" id="modal">
+
+	<form class="animate">
+
+		<div class="container header">
+			<span class="close" id="close">&times;</span>
+			<div class="formcont">
+
+<h3><i class="fa fa-user"></i>Home Service</h3>
+
+	<form>
+ <div class="form">
+ 
+	<input type="email"placeholder="yourname@gmail.com" name="email">
+  </div>	
+ 
+<div class="form">
+ 
+	<input type="email"placeholder="retype email"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location" name="psw">
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="time"placeholder="Enter Time"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="Number"placeholder="enter number "required>
+  </div>	
+<button>Order </button>
+
+	</form>
+</div>
+		</div>
+
+		
+
+	</form>
+
+
+  </div>
+	
+				<script>
+
+		document.getElementById("my").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("modal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("modal").style.display = "none";
+				
+			}
+
+		});
+
+	</script>	
+			<div class=" photo">
+			
+				<image src="image/3.jpg">
+			<div class="dinesh">
+				<p>Life Size Bronze Sculpture Church <br>Decorative Statue Religious                      		God<br>
+                  			  FOB Price:<b>NRP RS 657</b> / Plate<br>
+                 			   Min. Order: <b>1 </b>Piece</p>
+			</div>
+			<div class="buton">
+	 
+	 			  <button class="go" id="cat">Order</button>
+              			 </div>
+			</div>
+
+				<div class="modal" id="modal">
+
+	<form class="animate">
+
+		<div class="container header">
+			<span class="close" id="close">&times;</span>
+			<div class="formcont">
+
+<h3><i class="fa fa-user"></i>Home Service</h3>
+
+	<form>
+ <div class="form">
+ 
+	<input type="email"placeholder="yourname@gmail.com" name="email">
+  </div>	
+ 
+<div class="form">
+ 
+	<input type="email"placeholder="retype email"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location" name="psw">
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="time"placeholder="Enter Time"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="Number"placeholder="enter number "required>
+  </div>	
+<button>Order </button>
+
+	</form>
+</div>
+		</div>
+
+		
+
+	</form>
+
+
+  </div>
+	
+				<script>
+
+		document.getElementById("cat").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("modal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("modal").style.display = "none";
+				
+			}
+
+		});
+
+	</script>
+		</div>
+	<div class="first">
+		<div class="photo">
+				<image src="image/5.jpg">
+				<div class="dinesh">
+				<p>Life Size Bronze Sculpture Church <br>Decorative Statue Religious                      		God<br>
+                 			   FOB Price:<b> NRP RS 305</b> / Plate<br>
+                			    Min. Order: <b>1 </b>Piece</p>
+				</div>
+				<div class="buton">
+	 
+	 			  <button class="go" id="ao">Order</button>
+              			 </div>
+			</div>
+				<div class="modal" id="modal">
+
+	<form class="animate">
+
+		<div class="container header">
+			<span class="close" id="close">&times;</span>
+			<div class="formcont">
+
+<h3><i class="fa fa-user"></i>Home Service</h3>
+
+	<form>
+ <div class="form">
+ 
+	<input type="email"placeholder="yourname@gmail.com" name="email">
+  </div>	
+ 
+<div class="form">
+ 
+	<input type="email"placeholder="retype email"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location" name="psw">
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="time"placeholder="Enter Time"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="Number"placeholder="enter number "required>
+  </div>	
+<button>Order </button>
+
+	</form>
+</div>
+		</div>
+
+		
+
+	</form>
+
+
+  </div>
+	
+				<script>
+
+		document.getElementById("ao").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("modal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("modal").style.display = "none";
+				
+			}
+
+		});
+
+	</script>
+			<div class="photo">
+			
+				<image src="image/12.jpg">
+				<div class="dinesh">
+				<p>Life Size Bronze Sculpture Church <br>Decorative Statue Religious                      		God<br>
+                 			   FOB Price:<b>NRP RS 300</b> / plate<br>
+                 			   Min. Order: <b>1 </b>Plate</p>
+			</div>
+				<div class="buton">
+	 
+				   <button class="go" id="aa">Order</button>
+              			 </div>
+			</div>
+				<div class="modal" id="modal">
+
+	<form class="animate">
+
+		<div class="container header">
+			<span class="close" id="close">&times;</span>
+			<div class="formcont">
+
+<h3><i class="fa fa-user"></i>Home Service</h3>
+
+	<form>
+ <div class="form">
+ 
+	<input type="email"placeholder="yourname@gmail.com" name="email">
+  </div>	
+ 
+<div class="form">
+ 
+	<input type="email"placeholder="retype email"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location" name="psw">
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="time"placeholder="Enter Time"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="Number"placeholder="enter number "required>
+  </div>	
+<button>Order </button>
+
+	</form>
+</div>
+		</div>
+
+		
+
+	</form>
+
+
+  </div>
+	
+				<script>
+
+		document.getElementById("aa").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("modal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("modal").style.display = "none";
+				
+			}
+
+		});
+
+	</script>
+			<div class=" photo">
+			
+				<image src="image/10.jpg">
+			<div class="dinesh">
+				<p>Life Size Bronze Sculpture Church <br>Decorative Statue Religious                      		God<br>
+                  			  FOB Price:<b>NRP RS 657</b> / Plate<br>
+                 			   Min. Order: <b>1 </b>Piece</p>
+			</div>
+			<div class="buton">
+	 
+	 			  <button class="go" id="pt">Order</button>
+              			 </div>
+			</div>
+			</div>
+			<div class="modal" id="modal">
+
+			<form class="animate">
+
+		<div class="container header">
+			<span class="close" id="close">&times;</span>
+			<div class="formcont">
+
+<h3><i class="fa fa-user"></i>Home Service</h3>
+
+	<form>
+ <div class="form">
+ 
+	<input type="email"placeholder="yourname@gmail.com" name="email">
+  </div>	
+ 
+<div class="form">
+ 
+	<input type="email"placeholder="retype email"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location" name="psw">
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="time"placeholder="Enter Time"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="Number"placeholder="enter number "required>
+  </div>	
+<button>Order </button>
+
+	</form>
+</div>
+		</div>
+
+		
+
+	</form>
+
+
+  </div>
+	
+				<script>
+
+		document.getElementById("pt").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("modal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("modal").style.display = "none";
+				
+			}
+
+		});
+
+	</script>
+		<div class="first">
+			<div class="photo">
+			
+				<image src="image/15.jpg">
+				<div class="dinesh">
+				<p>Life Size Bronze Sculpture Church <br>Decorative Statue Religious                      		God<br>
+                 			   FOB Price:<b>NRP RS 300</b> / plate<br>
+                 			   Min. Order: <b>1 </b>Plate</p>
+			</div>
+				<div class="buton">
+	 
+				   <button class="go" id="pot">Order</button>
+              			 </div>
+			</div>
+<div class="modal" id="modal">
+
+	<form class="animate">
+
+		<div class="container header">
+			<span class="close" id="close">&times;</span>
+			<div class="formcont">
+
+<h3><i class="fa fa-user"></i>Home Service</h3>
+
+	<form>
+ <div class="form">
+ 
+	<input type="email"placeholder="yourname@gmail.com" name="email">
+  </div>	
+ 
+<div class="form">
+ 
+	<input type="email"placeholder="retype email"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location" name="psw">
+  </div>	
+
+<div class="form">
+  
+	<input type="loct"placeholder="location"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="time"placeholder="Enter Time"required>
+  </div>	
+
+<div class="form">
+  
+	<input type="Number"placeholder="enter number "required>
+  </div>	
+<button>Order </button>
+
+	</form>
+</div>
+		</div>
+
+		
+
+	</form>
+
+
+  </div>
+				<script>
+
+		document.getElementById("pot").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("modal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("modal").style.display = "none";
+				
+			}
+
+		});
+
+	</script>
+			<div class=" photo">
+			
+				<image src="image/28.jpg">
+			<div class="dinesh">
+				<p>Life Size Bronze Sculpture Church <br>Decorative Statue Religious                      		God<br>
+                  			  FOB Price:<b>NRP RS 657</b> / Plate<br>
+                 			   Min. Order: <b>1 </b>Piece</p>
+			</div>
+			<div class="buton">
+	 
+	 			 <button class="go" id="post">Order</button>
+              			 </div>
+			</div>
+			</div>
+
+				<div class="modal" id="modal">
+
+	<form class="animate">
+
+		<div class="container header">
+			<span class="close" id="close">&times;</span>
+			<p>i am the doctor</p>
+		</div>
+
+		
+
+	</form>
+
+
+  </div>
+				<script>
+
+		document.getElementById("post").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "block";
+
+		});
+
+
+		document.getElementById("close").addEventListener("click", function(){
+			
+			document.getElementById("modal").style.display = "none";
+
+		});
+
+
+		window.addEventListener("click", function(ev){
+
+			var mod = document.getElementById("modal");
+
+
+			if(ev.target == mod){
+			  document.getElementById("modal").style.display = "none";
+				
+			}
+
+		});
+
+	</script>
+
+		
+		<div class="footer">
+		
+			<p>&copy: 2021 onlinefooddelivery</p>
+							
+		</div>
+		
+		
+		
+
+
+
+
+		
+
+
+
+	</body>													
+   </html>
